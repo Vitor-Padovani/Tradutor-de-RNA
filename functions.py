@@ -1,5 +1,8 @@
 import sqlite3
 
+def line(length):
+    print('-'*length)
+
 def create_table():
     conn = sqlite3.connect('data/codons.db')
     c = conn.cursor()
