@@ -1,4 +1,14 @@
 import sqlite3
 import functions as f
 
-f.create_table()
+while True:
+    cdn = input('cdn: ').upper()
+    acr = input('acr: ').capitalize()
+    ptn = input('ptn: ').capitalize()
+
+    if cdn == '' or acr == '' or ptn == '':
+        break
+
+    f.add_codon(cdn, acr, ptn)
+
+# f.add_codon('UUU', 'Phe', 'Fenilalamina')

@@ -11,3 +11,11 @@ def create_table():
     )''')
     conn.commit()
     conn.close()
+
+def add_codon(cdn, acr, ptn):
+    conn = sqlite3.connect('data/codons.db')
+    c = conn.cursor()
+    c.execute('INSERT INTO codons VALUES (?,?,?)', 
+    (cdn, acr, ptn))
+    conn.commit()
+    conn.close()
