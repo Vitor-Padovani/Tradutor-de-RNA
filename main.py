@@ -12,5 +12,3 @@ while True:
         break
 
     f.add_codon(cdn, acr, ptn)
-
-# f.add_codon('UUU', 'Phe', 'Fenilalamina')

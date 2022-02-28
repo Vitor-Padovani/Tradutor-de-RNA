@@ -22,3 +22,10 @@ def add_codon(cdn, acr, ptn):
     (cdn, acr, ptn))
     conn.commit()
     conn.close()
+
+def del_codon(id):
+    conn = sqlite3.connect('data/codons.db')
+    c = conn.cursor()
+    c.execute('DELETE from codons WHERE rowid = ?', id)
+    conn.commit()
+    conn.close()
