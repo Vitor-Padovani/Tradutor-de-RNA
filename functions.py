@@ -29,3 +29,24 @@ def del_codon(id):
     c.execute('DELETE from codons WHERE rowid = ?', id)
     conn.commit()
     conn.close()
+
+def convert_codons(str):
+    str = str.strip().replace('\n', '').replace(' ', '').upper()
+    codons = []
+    proteins = []
+
+    for i in range(0, len(str)):
+        if i % 3 == 0:
+            try:
+                codons.append(str[i] + str[i+1] + str[i+2])
+            except:
+                break
+
+    conn = sqlite3.connect('data/codons.db')
+    c = conn.cursor()
+
+    for codon in codons:
+        c.execute('SELECT protein FROM codons WHERE codon = ?', [codon])
+        proteins.append(c.fetchone())
+    
+    return codons, proteins
