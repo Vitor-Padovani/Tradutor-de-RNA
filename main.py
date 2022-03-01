@@ -10,6 +10,8 @@ while True:
     data = f.convert_codons(codons)
     #print(data)
 
+    output = open('output/output.txt', 'w')
+
     option = input('option: ')
 
     match option:
@@ -19,9 +21,13 @@ while True:
                 if data[1][i][0] != 'Stop':
                     num += 1
                     print(f'{num}\t{data[0][i]}\t{data[1][i][0]}\t')
+                    output.writelines(f'{num}\t{data[0][i]}\t{data[1][i][0]}\t\n')
                 else:
                     print(f'{num}\t{data[0][i]}\t-\t\n')
+                    output.writelines(f'{num}\t{data[0][i]}\t-\t\n\n')
                     num = 0
+
+            output.close()
 
         case 'ptn':
             num = 0
@@ -35,3 +41,5 @@ while True:
             print()
 
     #print(data)
+
+

@@ -1,0 +1,10 @@
+1	AGU	Serina	
+2	ACG	Treonina	
+3	ACU	Treonina	
+4	GAU	Ácido aspártico	
+5	CGA	Arginina	
+6	UCG	Serina	
+7	UAC	Tirosina	
+8	GUA	Valina	
+9	GUC	Valina	
+10	GAC	Ácido aspártico	
