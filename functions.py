@@ -31,14 +31,20 @@ def del_codon(id):
     conn.close()
 
 def convert_codons(str):
-    str = str.strip().replace('\n', '').replace(' ', '').upper().replace('T', 'U')
+    str = str.upper().replace('T', 'U')
+    rna = ''
+
+    for char in str.upper():
+        if char in ('U', 'C', 'A', 'G'):
+            rna += char
+
     codons = []
     proteins = []
 
-    for i in range(0, len(str)):
+    for i in range(0, len(rna)):
         if i % 3 == 0:
             try:
-                codons.append(str[i] + str[i+1] + str[i+2])
+                codons.append(rna[i] + rna[i+1] + rna[i+2])
             except:
                 break
 
@@ -46,7 +52,7 @@ def convert_codons(str):
     c = conn.cursor()
 
     for codon in codons:
-        c.execute('SELECT protein FROM codons WHERE codon = ?', [codon])
+        c.execute('SELECT protein FROM codons WHERE codon = ?', [codon]) # brackets for turning variable to tuple
         proteins.append(c.fetchone())
 
     
