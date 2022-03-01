@@ -31,7 +31,7 @@ def del_codon(id):
     conn.close()
 
 def convert_codons(str):
-    str = str.strip().replace('\n', '').replace(' ', '').upper()
+    str = str.strip().replace('\n', '').replace(' ', '').upper().replace('T', 'U')
     codons = []
     proteins = []
 
@@ -48,5 +48,7 @@ def convert_codons(str):
     for codon in codons:
         c.execute('SELECT protein FROM codons WHERE codon = ?', [codon])
         proteins.append(c.fetchone())
+
     
+    conn.close()
     return codons, proteins
