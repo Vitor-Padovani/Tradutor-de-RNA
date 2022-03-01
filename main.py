@@ -14,14 +14,17 @@ while True:
 
     match option:
         case 'all':
+            num = 0
             for i in range(len(data[0])):
                 if data[1][i][0] != 'Stop':
-                    print(f'{i}\t{data[0][i]}\t{data[1][i][0]}\t')
+                    num += 1
+                    print(f'{num}\t{data[0][i]}\t{data[1][i][0]}\t')
                 else:
-                    print(f'{i}\t{data[0][i]}\t-\t')
+                    print(f'{num}\t{data[0][i]}\t-\t\n')
+                    num = 0
 
         case 'ptn':
-            num = 1
+            num = 0
             for i in range(len(data[0])):
                 if data[1][i][0] != 'Stop':
                     print(f'{data[1][i][0]}', end=' - ')
