@@ -16,27 +16,39 @@ while True:
 
     match option:
         case 'all':
-            num = 0
+            codon_num = 0
             for i in range(len(data[0])):
                 if data[1][i][0] != 'Stop':
-                    num += 1
-                    print(f'{num}\t{data[0][i]}\t{data[1][i][0]}\t')
-                    output.writelines(f'{num}\t{data[0][i]}\t{data[1][i][0]}\t\n')
+                    codon_num += 1
+                    print(f'{codon_num}\t{data[0][i]}\t{data[1][i][0]}\t')
+                    output.writelines(f'{codon_num}\t{data[0][i]}\t{data[1][i][0]}\t\n')
                 else:
-                    print(f'{num}\t{data[0][i]}\t-\t\n')
-                    output.writelines(f'{num}\t{data[0][i]}\t-\t\n\n')
-                    num = 0
+                    print(f'{codon_num}\t{data[0][i]}\t-\t\n')
+                    output.writelines(f'{codon_num}\t{data[0][i]}\t-\t\n\n')
+                    codon_num = 0
 
             output.close()
 
         case 'ptn':
-            num = 0
+            ptn_num = 0
+            ptn_format = 1
             for i in range(len(data[0])):
+    
                 if data[1][i][0] != 'Stop':
-                    print(f'{data[1][i][0]}', end=' - ')
+                    if ptn_format % 10 == 0:
+                        print(f'{data[1][i][0]}')
+                        output.writelines(f'{data[1][i][0]}\n')
+                    else:
+                        print(f'{data[1][i][0]}', end=' - ')
+                        output.writelines(f'{data[1][i][0]} - ')
+                    ptn_format += 1
                 else:
-                    num += 1
-                    print(f'STOP [Proteína {num}]')
+                    ptn_num += 1
+                    print(f'STOP [Proteína {ptn_num}]\n')
+                    output.writelines(f'STOP [Proteína {ptn_num}]\n\n')
+                    ptn_format = 1
+                
+            output.close()
 
             print()
 
