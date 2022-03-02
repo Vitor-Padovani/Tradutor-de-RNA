@@ -16,6 +16,7 @@ while True:
 
     match option:
         case 'all':
+            ptn_num = 1
             codon_num = 0
             for i in range(len(data[0])):
                 if data[1][i][0] != 'Stop':
@@ -23,8 +24,9 @@ while True:
                     print(f'{codon_num}\t{data[0][i]}\t{data[1][i][0]}\t')
                     output.writelines(f'{codon_num}\t{data[0][i]}\t{data[1][i][0]}\t\n')
                 else:
-                    print(f'{codon_num}\t{data[0][i]}\t-\t\n')
-                    output.writelines(f'{codon_num}\t{data[0][i]}\t-\t\n\n')
+                    print(f'{codon_num}\t{data[0][i]}\t-\t[Proteína {ptn_num}]\n')
+                    output.writelines(f'{codon_num}\t{data[0][i]}\t-\t[Proteína {ptn_num}]\n\n')
+                    ptn_num += 1
                     codon_num = 0
 
             output.close()
