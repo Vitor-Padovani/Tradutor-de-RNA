@@ -30,13 +30,7 @@ def del_codon(id):
     conn.commit()
     conn.close()
 
-def convert_codons(str):
-    str = str.upper().replace('T', 'U')
-    rna = ''
-
-    for char in str.upper():
-        if char in ('U', 'C', 'A', 'G'):
-            rna += char
+def convert_codons(rna):
 
     codons = []
     proteins = []
@@ -58,3 +52,13 @@ def convert_codons(str):
     
     conn.close()
     return codons, proteins
+
+def format_str(str):
+    str = str.upper().replace('T', 'U')
+    rna = ''
+
+    for char in str.upper():
+        if char in ('U', 'C', 'A', 'G'):
+            rna += char
+    
+    return rna
