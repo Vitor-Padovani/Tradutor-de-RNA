@@ -1,0 +1,13 @@
+1	AAA	Lisina	
+2	GUC	Valina	
+3	AUG	Metionina	
+4	AUG	Metionina	
+5	GUC	Valina	
+6	UGU	Cisteína	
+7	GAC	Ácido aspártico	
+8	UGU	Cisteína	
+9	ACG	Treonina	
+10	AUC	Isoleucina	
+11	GUA	Valina	
+12	CAG	Glutamina	
+13	CAU	Histidina	

@@ -1,21 +1,17 @@
 import functions as f
 
+input_file = open('input/input.txt', 'r')
+output_file = open('output/output.txt', 'w')
+
 
 while True:
-    '''codons = input('Digite os genes: ')
-
-
-    if codons == '':
-        break'''
     
     codons = ''
-    input_file = open('input/input.txt', 'r')
     codons = f.format_str(input_file.read())
 
     data = f.convert_codons(codons)
-    #print(data)
 
-    output_file = open('output/output.txt', 'w')
+    #print(data)
 
     option = input('option: ')
     if option == '':
