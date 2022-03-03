@@ -1,13 +1,45 @@
-1	AAA	Lisina	
-2	GUC	Valina	
-3	AUG	Metionina	
-4	AUG	Metionina	
-5	GUC	Valina	
-6	UGU	Cisteína	
-7	GAC	Ácido aspártico	
-8	UGU	Cisteína	
-9	ACG	Treonina	
-10	AUC	Isoleucina	
-11	GUA	Valina	
-12	CAG	Glutamina	
-13	CAU	Histidina	
+AUG - CCC - ACC - UCA - CAU - CAU - UCU - CAU - CUC - CCC
+UCC - UCU - AUC - UUC - CUC - UCC - UCG - CAC - CGG - AAG
+GAG - AAC - UUG - AGC - CAU - GAA - GCC - AUU - CCC - CCA
+CAG - AGA - AGU - GCU - GAG - GUU - ACA - UCU - AGC - UCC
+UUG - CUC - GCA - UCA - GAA - CUG - GUC - AAC - AGA - AGG
+ACA - UGG - AAG - CAU - AUG - AUA - GGC - CUG - UCG - AAG
+UUC - ACC - GAC - AGU - UCU - ACU - UGU - GCA - UGC - AGC
+STOP [Proteína 1]
+
+AUC - AAG - AAG - UGU - CAU - UUU - CCU - UUU - AAC - CUU
+UUC - CAG - CAC - GAA - GGU - UGU - CCU - CUC - ACA - AGG
+UGG - CUC - GGU - GAC - CGU - GGA - UGC - UCC - UGC - CUG
+CCG - AUC - AAA - AUU - GCA - AGA - UGU - GUG - AGA - GAG
+AGA - GAG - AGA - GUG - CAC - GUG - AAU - CAA - CAG - UGC
+UCU - GCU - CUC - UUU - UCC - UCA - UCC - UCU - CAG - UCU
+CCA - UCC - CGU - UGU - AGG - CAC - GUC - UUU - AUG - GCA
+GCU - GUC - UCA - AAA - GCA - ACC - AGC - CUU - UUG - CGU
+GCA - GGC - CAA - CAA - UGC - UUC - UCU - CUC - UCU - CUC
+UCU - CUC - UCU - CUC - UCA - UGG - AGC - GCA - CAG - AGC
+CGU - AGA - STOP [Proteína 2]
+
+AUG - GCA - UUG - GUG - GCG - GCG - GAC - CCG - ACG - GGG
+AGG - AAG - GCG - UCG - GCG - AGG - AUC - UAC - GGG - CUG
+CGC - ACA - UUC - CUG - GAC - CCG - GGG - UGC - CCG - ACG
+GAC - UUC - UAC - GGC - GCG - UUC - CGG - GAC - AAC - GUG
+CGA - CGG - UUC - GUG - CGA - GAG - UGC - GCC - GAC - AUC
+GAG - GAG - CGG - GCG - ACG - GCG - GGA - AUG - CCG - ACG
+UGG - CGC - ACG - CUG - CUG - GUG - GAC - GAG - CAG - AGC
+GGG - CUG - GUG - GUG - CCG - CUC - UAC - ACC - GUC - GAG
+GAG - UGC - GUC - CGC - CGC - UCC - CCC - AUC - CCC - UUC
+UGC - GAC - UAC - UGC - CGC - UGC - AGC - GGU - GAG - UUC
+CUA - UCU - CGU - UCU - UGG - UAC - CAA - UUG - GGU - UUC
+CCA - UGG - GGU - GAU - CAC - GAU - UCU - GUU - CUG - STOP [Proteína 3]
+
+AUG - UUC - ACC - AUC - UGC - UUG - UUC - GGC - CUG - CAG
+UGG - CUG - UUC - GGG - UUC - GUG - AAC - UUU - UGG - UUC
+CCG - AAA - GCG - UCG - CCG - CCG - ACG - AGA - ACC - CUG
+CUG - GUC - UCG - UUG - CAC - GCU - UCG - GCU - GGA - AUG
+GCG - AUC - UUU - CCG - UUG - ACG - GUG - UGC - AGG - GCG
+GAG - ACG - GGG - CUU - GCG - CAG - AUG - GAC - GCG - GCG
+CCG - GGG - ACG - GAG - GCU - CAU - UUG - GUC - AAC - UUC
+GCC - GGC - CUC - UUU - AUC - CGU - CUC - UUU - GAG - GUG
+ACU - GUG - AGC - AUC - GCU - GUA - GCC - CUU - CGC - GGG
+GUA - UCC - AUU - STOP [Proteína 4]
+
