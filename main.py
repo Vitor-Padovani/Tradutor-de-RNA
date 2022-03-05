@@ -24,12 +24,19 @@ while True:
         case 'all':
             ptn_num = 1
             codon_num = 0
+
+            output_file.writelines(f'Número\tCódon\tProteínas\t\n')
+            output_file.writelines(f'{"-"*32}\n')
+            print(f'Número\tCódon\tProteínas\t')
+            f.line(25)
+
             for i in range(len(data[0])):
                 if data[1][i][0] != 'Stop':
                     codon_num += 1
                     print(f'{codon_num}\t{data[0][i]}\t{data[1][i][0]}\t')
                     output_file.writelines(f'{codon_num}\t{data[0][i]}\t{data[1][i][0]}\t\n')
                 else:
+                    codon_num += 1
                     print(f'{codon_num}\t{data[0][i]}\t-\t[Proteína {ptn_num}]\n')
                     output_file.writelines(f'{codon_num}\t{data[0][i]}\t-\t[Proteína {ptn_num}]\n\n')
                     ptn_num += 1
