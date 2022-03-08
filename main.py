@@ -25,9 +25,9 @@ while True:
             ptn_num = 1
             codon_num = 0
 
-            output_file.writelines(f'Número\tCódon\tProteínas\t\n')
+            output_file.writelines(f'Número\tCódon\tAminoácidos\t\n')
             output_file.writelines(f'{"-"*32}\n')
-            print(f'Número\tCódon\tProteínas\t')
+            print(f'Número\tCódon\tAminoácidos\t')
             f.line(25)
 
             for i in range(len(data[0])):
