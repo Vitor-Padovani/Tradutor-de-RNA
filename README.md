@@ -1,6 +1,6 @@
 # Tradutor de RNA
 
-Software feito com *Python* e *SQLite3* que converte as sequências de **Nucleotídios**, de um RNA, nas **Proteínas** que este produz.
+Software feito com *Python* e *SQLite3* que converte as sequências de **Nucleotídios**, de um RNA, nos **Aminoácidos** e **Proteínas** que este produz.
 
 ## Estrutura
 
@@ -19,12 +19,12 @@ CAUGCAGCGUGA
 
 - Output ( se comando = 'all' )
 
-| Número | Códon | Proteína  |
-|--------|-------|-----------|
-| 1      | CAU   | Histidina |
-| 2      | GCA   | Alanina   |
-| 3      | GCG   | Alanina   |
-| 4      | UGA   | -         |
+| Número | Códon | Aminoácidos |
+|--------|-------|-------------|
+| 1      | CAU   | Histidina   |
+| 2      | GCA   | Alanina     |
+| 3      | GCG   | Alanina     |
+| 4      | UGA   | -           |
 
 ## Comandos
 
